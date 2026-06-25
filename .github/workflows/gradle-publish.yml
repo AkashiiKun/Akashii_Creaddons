@@ -36,12 +36,14 @@ jobs:
 
     - name: Build with Gradle
       run: ./gradlew build
-
+      
     - name: upload to github releases
       uses: ncipollo/release-action@v1
       with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           artifacts: "build/libs/*"
           tag: "v${{ github.run_number }}"
           name: "Release v${{ github.run_number }}"
           body: "Automated build export from workflow run ${{ github.run_number }}."
           allowUpdates: true
+          replaceArtifacts: true
