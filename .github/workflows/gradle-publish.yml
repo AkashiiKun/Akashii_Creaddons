@@ -46,4 +46,4 @@ jobs:
           name: "Release v${{ github.run_number }}"
           body: "Automated build export from workflow run ${{ github.run_number }}."
           allowUpdates: true
-          replaceArtifacts: true
+          removeArtifacts: true
