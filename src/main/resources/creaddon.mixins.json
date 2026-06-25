@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "io.github.akashiikun.creaddon.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	},
+	"mixins": [
+		"BlazeBurnerAccessor",
+		"MixinBlazeBurnerTileEntity"
+	]
+}

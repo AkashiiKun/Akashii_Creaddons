@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "creaddon",
+  "version": "${version}",
+  "name": "Akashii's Create Addons",
+  "description": "Imagine creating in Minecraft.",
+  "authors": [
+    "AkashiiKun"
+  ],
+  "license": "CC0-1.0",
+  "icon": "assets/creaddon/icon.png",
+  "entrypoints": {
+    "main": [
+      "io.github.akashiikun.creaddon.CreaddonMod"
+    ],
+    "client": [
+      "io.github.akashiikun.creaddon.client.CreaddonModClient"
+    ],
+    "fabric-datagen": [
+      "io.github.akashiikun.creaddon.client.CreaddonModDataGenerator"
+    ]
+  },
+  "mixins": [
+    "creaddon.mixins.json",
+    {
+      "config": "creaddon.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.2",
+    "minecraft": "~26.1.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

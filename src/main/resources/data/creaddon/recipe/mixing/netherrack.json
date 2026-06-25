@@ -1,0 +1,14 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    "#c:stones",
+    "minecraft:nether_wart"
+  ],
+  "results": [
+    {
+      "id": "minecraft:netherrack",
+      "count": 1
+    }
+  ]
+}

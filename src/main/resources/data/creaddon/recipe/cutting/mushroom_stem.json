@@ -1,0 +1,10 @@
+{
+  "type": "create:cutting",
+  "ingredient": "#creaddon:mushroom_block",
+  "processing_time": 200,
+  "results": [
+    {
+      "id": "minecraft:mushroom_stem"
+    }
+  ]
+}
